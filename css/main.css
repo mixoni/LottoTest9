@@ -2,14 +2,28 @@
     background-color: #3f4d67;
     overflow:hidden;
 }
+.drum-images {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.drum-images.hide {
+    display: none;
+}
+
+.drum-images.show {
+    display: block;
+}
 .title-header {
     color: #4fc3f7;
     font-size:6em;
     margin-left:400px;
 }
 .center-circle {
-    width: 370px;
-    height: 370px;
+    width: 340px;
+    height: 340px;
     left: 58%;
     top: 14%;
     text-indent: -9999px;
@@ -17,10 +31,15 @@
     border-radius: 50%;
     position: absolute;
     border-style: solid;
+    background-color: #3f4d67;
+}
+.animation-uninques {
+    padding-top: 465px;
+    font-size: 22px;
 }
 .center-circle-outside {
-    width: 545px;
-    height: 545px;
+    width: 508px;
+    height: 508px;
     /*left: 52.1%;
     top: 3%;*/
     text-indent: -9999px;
@@ -30,8 +49,8 @@
     border-style: solid;
 }
 .ball-circle {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     text-align: center;
     /*border: 2px solid #243759;*/
     border-radius: 50%;
@@ -71,13 +90,13 @@
     border-radius:5px;
 }
 .row.row-1 {
-    min-height: 60px;
-    max-height: 60px;
+    min-height: 58px;
+    max-height: 58px;
     background-color: #202d44;
 }
 .row.row-2 {
-    min-height: 120px;
-    max-height: 120px;
+    min-height: 116px;
+    max-height: 116px;
     background-color: #202d44;
 }
 .row.row-2-custom {
@@ -95,52 +114,52 @@
 }
     
 .row.row-3 {
-    min-height: 170px;
-    max-height: 170px;
+    min-height: 174px;
+    max-height: 174px;
     background-color: #202d44;
 }
 .row.row-3-custom {
-    min-height: 205px;
-    max-height: 205px;
+    min-height: 197px;
+    max-height: 197px;
     background-color: #202d44;
 }
 .row.row-4 {
-    min-height: 240px;
-    max-height: 240px;
+    min-height: 232px;
+    max-height: 232px;
     background-color: #202d44;
 }
 .row.row-5 {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 290px;
+    max-height: 290px;
 }
 .row.row-6 {
-    min-height: 360px;
-    max-height: 360px;
+    min-height: 348px;
+    max-height: 348px;
 }
 .row.row-7 {
     background-color: #202d44;
-    min-height: 420px;
-    max-height: 420px;
+    min-height: 406px;
+    max-height: 406px;
 }
 .row.row-8 {
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 464px;
+    max-height: 464px;
     background-color: #202d44;
 }
 .row.row-9 {
-    min-height: 570px;
-    max-height: 570px;
+    min-height: 522px;
+    max-height: 522px;
     background-color: #202d44;
 }
 .row.row-10 {
-    min-height: 620px;
-    max-height: 620px;
+    min-height: 580px;
+    max-height: 580px;
     background-color: #202d44;
 }
 
 .row.row-11 {
-min-height: 760px;
-max-height: 760px;
+min-height: 638px;
+max-height: 638px;
 background-color: #202d44;
 }
 .row.row-11-custom {
@@ -154,20 +173,8 @@ row-11-custom .ball-numbers-medium {
 }
 
 .row.row-12 {
-    min-height: 820px;
-    max-height: 820px;
-    background-color: #202d44;
-}
-
-.row.row-13 {
-    min-height: 880px;
-    max-height: 880px;
-    background-color: #202d44;
-}
-
-.row.row-14 {
-    min-height: 940px;
-    max-height: 940px;
+    min-height: 696px;
+    max-height: 696px;
     background-color: #202d44;
 }
 
@@ -182,14 +189,14 @@ row-11-custom .ball-numbers-medium {
     height: auto;
     font-size: 5em;
     display: block;
-    padding-top: 51px;
+    padding-top: 40px;
     padding-left: 30px;
     color: whitesmoke;
     width: 1px;
 }
 .results-numbers {
     /*position: absolute;*/
-    margin-left: 242px;
+    margin-left: 384px;
 }
 .countdown-timer {
     font-size:4em;
@@ -208,7 +215,7 @@ row-11-custom .ball-numbers-medium {
     padding-left: 2%;
     padding-top: 9%;
     padding-bottom: 7%;
-    font-size: 32px;
+    font-size: 28px;
 }
 .statistic-result div:first-child {
     width:75%;
@@ -278,20 +285,13 @@ row-11-custom .ball-numbers-medium {
     position:relative;
 }
 
+.statistics .row-3 {
+    margin-top:18px;
+}
+
 .ball-game .ball-selected {
     background: linear-gradient(to right, #0066ff 0%, #66ff66 20%, yellow 40%, green 60%, red 80%, blue 100%);
-    background-image: linear-gradient(330deg, transparent 50%, #FF8100 50%), 
-                      linear-gradient(300deg, transparent 50%, #FF5800 50%), 
-                      linear-gradient(270deg, transparent 50%, #FF3BA7 50%), 
-                      linear-gradient(240deg, transparent 50%, #CC42A2 50%), 
-                      linear-gradient(210deg, transparent 50%, #9f49ac 50%), 
-                      linear-gradient(180deg, transparent 50%, #476EAF 50%), 
-                      linear-gradient(150deg, transparent 50%, #179067 50%), 
-                      linear-gradient(120deg, transparent 50%, #50B517 50%), 
-                      linear-gradient(90deg, transparent 50%, #9ED110 50%), 
-                      linear-gradient(60deg, transparent 50%, #EDE604 50%), 
-                      linear-gradient(30deg, transparent 50%, #FFCC00 50%), 
-                      linear-gradient(0deg, transparent 50%, #FEAC00 50%);
+    background-image: linear-gradient(330deg, transparent 50%, #FF8100 50%), linear-gradient(300deg, transparent 50%, #FF5800 50%), linear-gradient(270deg, transparent 50%, #FF3BA7 50%), linear-gradient(240deg, transparent 50%, #CC42A2 50%), linear-gradient(210deg, transparent 50%, #9f49ac 50%), linear-gradient(180deg, transparent 50%, #476EAF 50%), linear-gradient(150deg, transparent 50%, #179067 50%), linear-gradient(120deg, transparent 50%, #50B517 50%), linear-gradient(90deg, transparent 50%, #9ED110 50%), linear-gradient(60deg, transparent 50%, #EDE604 50%), linear-gradient(30deg, transparent 50%, #FFCC00 50%), linear-gradient(0deg, transparent 50%, #FEAC00 50%);
     /*background-clip: content-box, content-box, content-box, content-box, content-box, content-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box;*/
 }
 .ball-game .ball-inner-circle {
@@ -328,9 +328,10 @@ row-11-custom .ball-numbers-medium {
     border-radius: 50%;
     line-height: 150px;
     vertical-align: middle;
-    -webkit-animation: ballToDown 5s 1; /* Safari 4.0 - 8.0 */
+    z-index:1000;
+    -webkit-animation: ballToDown 4s 1; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-    animation: ballToDown 5s 1;
+    animation: ballToDown 4s 1;
     animation-direction: alternate;
     z-index:100;
     opacity:0;
@@ -339,8 +340,8 @@ row-11-custom .ball-numbers-medium {
     color: #243759;
     width: 200px;
     height: 100px;
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: -200px;
+    margin-left: 80px;
     font-size: 6em;
     text-indent: 1px;
     text-align: center;
@@ -348,28 +349,26 @@ row-11-custom .ball-numbers-medium {
     border-radius: 10%;
     line-height: 100px;
     vertical-align: middle;
+    z-index:100;
 }
 
+.statistics .ball-numbers-medium .ball-selected {
+    width: 72px;
+    height: 72px;
+}
+.statistics .ball-numbers-medium {
+    width: 70px;
+    height: 70px;
+}
 /* HD Resolution - 1280 x 720 */
-@media screen and (min-height: 720px) {   
+@media screen and (min-height: 720px) {
     .ball-logo, .ball-game {
         left: 0px;
         margin-left: 1%
     }
 }
 
-@media screen and (min-height: 1080px) {
-    .row.row-9 {
-        min-height: 660px;
-        max-height: 660px;
-    }
-    .row.row-10 {
-        min-height: 710px;
-        max-height: 710px;
-    }
-    .animation-uninques {
-        padding-top:600px;
-    }
+@media screen and (min-height: 1080px) {    
     .col-md-8 {
         min-width: 60%;
         max-width: 60%;
@@ -386,4 +385,571 @@ row-11-custom .ball-numbers-medium {
         margin-left: 421px;
         padding-top: 11px
     }
+}
+
+@media screen and (min-height: 1080px) {
+    .animation-uninques {
+        padding-top: 700px;
+        font-size: 32px;
+    }
+    .row {
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+        .row.row-1 {
+            min-height: 87px;
+            max-height: 87px;
+            background-color: #202d44;
+        }
+
+        .row.row-2 {
+            min-height: 174px;
+            max-height: 174px;
+            background-color: #202d44;
+        }
+
+        /*.row.row-2-custom {
+            min-height: 78px;
+            max-height: 78px;
+            background-color: #202d44;
+        }
+
+            .row.row-2-custom .countdown-timer {
+                margin-top: 0px;
+                margin-right: 10px;
+                padding: 0px;
+            }*/
+
+            /*.row.row-2-custom .ball-game, .row.row-2-custom .ball-logo {
+                top: 6px;
+            }*/
+
+        .row.row-3 {
+            min-height: 261px;
+            max-height: 261px;
+            background-color: #202d44;
+        }
+
+        .row.row-3-custom {
+            min-height: 205px;
+            max-height: 205px;
+            background-color: #202d44;
+        }
+
+        .row.row-4 {
+            min-height: 348px;
+            max-height: 348px;
+            background-color: #202d44;
+        }
+
+        .row.row-5 {
+            min-height: 435px;
+            max-height: 435px;
+        }
+
+        .row.row-6 {
+            min-height: 522px;
+            max-height: 522px;
+        }
+
+        .row.row-7 {
+            background-color: #202d44;
+            min-height: 609px;
+            max-height: 609px;
+        }
+
+        .row.row-8 {
+            min-height: 696px;
+            max-height: 696px;
+            background-color: #202d44;
+        }
+
+        .row.row-9 {
+            min-height: 783px;
+            max-height: 783px;
+            background-color: #202d44;
+        }
+
+        .row.row-10 {
+            min-height: 870px;
+            max-height: 870px;
+            background-color: #202d44;
+        }
+
+        .row.row-11 {
+            min-height: 967px;
+            max-height: 967px;
+            background-color: #202d44;
+        }
+
+        .row.row-11-custom {
+            min-height: 665px;
+            max-height: 665px;
+            background-color: #202d44;
+        }
+
+    row-11-custom .ball-numbers-medium {
+        top: 0px;
+        bottom: 0px;
+    }
+
+    .row.row-12 {
+        min-height: 1044px;
+        max-height: 1044px;
+        background-color: #202d44;
+    }
+    .ball-circle, .ball-logo, .ball-game {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .ball-numbers {
+        width: 105px !important;
+        height: 105px !important;
+    }
+    .ball-selected-badges {
+        width: 107px !important;
+        height: 107px !important;
+    }
+    .ball-selected-animation, .ball-selected {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .statistics .ball-selected-animation, .statistics .ball-selected {
+        width: 112px !important;
+        height: 112px !important;
+    }
+    
+    .center-circle {
+        width: 500px;
+        height: 500px;
+        top:13%;
+    }
+    .center-circle-outside {
+        width: 730px;
+        height: 730px;
+        top: 25px !important;
+        left: 996px !important;
+    }
+
+    .statistics .ball-numbers-medium {
+        width: 110px;
+        height: 110px;
+    }
+
+    .statistics .ball-numbers-medium .ball-inner-circle {
+        margin: 21% !important;
+        width: 53px !important;
+        height: 53px !important;
+    }
+
+    .statistics .ball-numbers-medium .ball-inner-circle .ball-circle-number {
+        width: 50px !important;
+        height: 50px !important;
+        margin: 2.5% !important;
+        font-size: 2.5em !important;
+        line-height: 50px !important;
+    }
+    .statistics .ball-numbers-medium {
+        top:15px;
+    }
+    .statistics .results-numbers {
+        margin-left:610px;
+    }
+    .statistics .row-3 {
+        margin-top: 30px;
+    }
+    .statistics .ball-game .ball-circle-number {
+        font-size:4em !important;
+    }
+    .statistics .results-time {
+        font-size: 8em;
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+    .statistics .ball-logo, .statistics .ball-game {
+        top: 25px !important;
+        margin-left:2% !important;
+    }
+    .statistics .ball-logo {
+        background-size: 170px !important;
+        width: 115px !important;
+        height: 115px !important;
+    }
+    .statistics .ball-game .ball-inner-circle {
+        margin-left: 7px !important;
+        margin-top: 7.9px !important;
+    }
+    .statistics .countdown-timer {
+        font-size: 6em;
+    }
+    .statistics .ball-game .ball-selected {
+        margin-left: -10px;
+    }
+    .ball-logo {
+        background-size: 145px !important;
+    }
+    .ball-numbers {
+        margin-left:.65% !important;
+    }
+    .statistic-result {
+        padding-top: 8%;
+        padding-bottom: 5%;
+        font-size: 46px;
+    }
+    .center-circle div.center-ball-animation-finished-text {
+        width: 220px;
+        height: 120px;
+        margin-top: -290px;
+        margin-left: 140px;
+        font-size: 6.2em;
+        border-radius: 10%;
+        line-height: 120px;
+        z-index:100
+    }
+    .center-circle div.center-ball-animation {
+        width: 170px;
+        height: 170px;
+        font-size: 6.2em;
+        text-indent: 1px;
+        line-height: 170px;
+        -webkit-animation: ballToDown-FullHd 4s 1; /* Safari 4.0 - 8.0 */
+        -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+        animation: ballToDown-FullHd 4s 1;
+        animation-direction: alternate;
+    }
+    .ball-inner-circle {
+        margin: 21% !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .ball-selected-badges .ball-inner-circle {
+        margin: 21% !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .ball-selected-badges .ball-circle-number {
+        width: 47px !important;
+        height: 47px !important;
+        margin: 3.5% !important;
+        font-size: 2.5em !important;
+    }
+    .ball-circle-number {
+        width: 42px !important;
+        height: 42px !important;
+        margin: 3.5% !important;
+        font-size: 1.9em !important;
+    }
+    .ball-game .ball-circle-number {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        font-size: 3em !important;
+        font-weight: bold !important;
+    }
+    .ball-logo, .ball-game {
+        top:45px !important;
+    }
+}
+
+/* 4K UHD TVs */
+
+@media screen and (min-height: 2160px) {
+    .animation-uninques {
+        padding-top: 1400px;
+        font-size: 62px;
+    }
+
+    .row {
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+        .row.row-1 {
+            min-height: 176px;
+            max-height: 176px;
+            background-color: #202d44;
+        }
+
+        .row.row-2 {
+            min-height: 352px;
+            max-height: 352px;
+            background-color: #202d44;
+        }
+
+        /*.row.row-2-custom {
+            min-height: 78px;
+            max-height: 78px;
+            background-color: #202d44;
+        }
+
+            .row.row-2-custom .countdown-timer {
+                margin-top: 0px;
+                margin-right: 10px;
+                padding: 0px;
+            }*/
+
+        /*.row.row-2-custom .ball-game, .row.row-2-custom .ball-logo {
+                top: 6px;
+            }*/
+
+        .row.row-3 {
+            min-height: 528px;
+            max-height: 528px;
+            background-color: #202d44;
+        }
+
+        .row.row-3-custom {
+            min-height: 205px;
+            max-height: 205px;
+            background-color: #202d44;
+        }
+
+        .row.row-4 {
+            min-height: 704px;
+            max-height: 704px;
+            background-color: #202d44;
+        }
+
+        .row.row-5 {
+            min-height: 880px;
+            max-height: 880px;
+        }
+
+        .row.row-6 {
+            min-height: 1056px;
+            max-height: 1056px;
+        }
+
+        .row.row-7 {
+            background-color: #202d44;
+            min-height: 1232px;
+            max-height: 1232px;
+        }
+
+        .row.row-8 {
+            min-height: 1408px;
+            max-height: 1408px;
+            background-color: #202d44;
+        }
+
+        .row.row-9 {
+            min-height: 1584px;
+            max-height: 1584px;
+            background-color: #202d44;
+        }
+
+        .row.row-10 {
+            min-height: 1760px;
+            max-height: 1760px;
+            background-color: #202d44;
+        }
+
+        .row.row-11 {
+            min-height: 1936px;
+            max-height: 1936px;
+            background-color: #202d44;
+        }
+
+        .row.row-11-custom {
+            min-height: 2112px;
+            max-height: 2112px;
+            background-color: #202d44;
+        }
+
+    row-11-custom .ball-numbers-medium {
+        top: 0px;
+        bottom: 0px;
+    }
+
+    .row.row-12 {
+        min-height: 1044px;
+        max-height: 1044px;
+        background-color: #202d44;
+    }
+
+    .ball-circle, .ball-logo, .ball-game {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .ball-numbers {
+        width: 210px !important;
+        height: 210px !important;
+    }
+
+    .ball-selected-badges {
+        width: 214px !important;
+        height: 214px !important;
+    }
+
+    .ball-selected-animation, .ball-selected {
+        width: 180px !important;
+        height: 180px !important;
+    }
+    .statistics .ball-selected-animation, .statistics .ball-selected {
+        width: 224px !important;
+        height: 224px !important;
+    }
+    .center-circle {
+        width: 1000px;
+        height: 1000px;
+        top: 13%;
+    }
+
+    .center-circle-outside {
+        width: 1460px;
+        height: 1460px;
+        top: 50px !important;
+        left: 1992px !important;
+    }
+
+    .ball-logo {
+        background-size: 290px !important;
+    }
+
+    .statistic-result {
+        padding-top: 8%;
+        padding-bottom: 5%;
+        font-size: 90px;
+    }
+
+    .center-circle div.center-ball-animation-finished-text {
+        width: 440px;
+        height: 220px;
+        margin-top: -590px;
+        margin-left: 280px;
+        font-size: 10.2em;
+        border-radius: 10%;
+        line-height: 240px;
+        z-index:100;
+    }
+
+    .center-circle div.center-ball-animation {
+        width: 340px;
+        height: 340px;
+        font-size: 6.2em;
+        text-indent: 1px;
+        line-height: 340px;
+        -webkit-animation: ballToDown-UltraHD4K 4s 1; /* Safari 4.0 - 8.0 */
+        -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+        animation: ballToDown-UltraHD4K 4s 1;
+        animation-direction: alternate;
+    }
+
+    .ball-inner-circle {
+        margin: 21% !important;
+        width: 105px !important;
+        height: 105px !important;
+    }
+    .ball-selected-badges .ball-inner-circle {
+        margin: 20% !important;
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .ball-selected-badges .ball-circle-number {
+        width: 115px !important;
+        height: 115px !important;
+        margin: 3% !important;
+        font-size: 6em !important;
+    }
+    .ball-circle-number {
+        width: 97px !important;
+        height: 97px !important;
+        margin: 3.5% !important;
+        font-size: 5em !important;
+    }
+
+    .ball-game .ball-circle-number {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        font-size: 7em !important;
+        font-weight: bold !important;
+    }
+
+    .ball-logo, .ball-game {
+        top: 90px !important;
+    }
+
+    .ball-game .ball-inner-circle {
+        margin-left: 13px !important;
+        margin-top: 14px !important;
+    }
+    [data-badge]:after {
+        font-size: 2.5em !important;
+        width: 46px !important;
+        height: 54px !important;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 38px !important;
+        /* box-shadow: 0 0 1px #333; */
+    }
+    .react-countdown-clock {
+        width:1000px;
+        height:1000px;
+    }
+
+    .statistics .ball-numbers-medium {
+        width: 220px;
+        height: 220px;
+    }
+
+    .statistics .ball-numbers-medium .ball-inner-circle {
+        margin: 21% !important;
+        width: 112px !important;
+        height: 112px !important;
+    }
+
+    .statistics .ball-numbers-medium .ball-inner-circle .ball-circle-number {
+        width: 103px !important;
+        height: 103px !important;
+        margin: 5% !important;
+        font-size: 5em !important;
+        line-height: 103px !important;
+    }
+
+    .statistics .ball-numbers-medium {
+        top: 30px;
+    }
+
+    .statistics .results-numbers {
+        margin-left: 1400px;
+    }
+
+    .statistics .row-3 {
+        margin-top: 60px;
+    }
+
+    .statistics .ball-game .ball-circle-number {
+        font-size: 8em !important;
+    }
+
+    .statistics .results-time {
+        font-size: 16em;
+        padding-top: 100px;
+        padding-left: 60px;
+    }
+
+    .statistics .ball-logo, .statistics .ball-game {
+        top: 50px !important;
+        margin-left: 2% !important;
+    }
+
+    .statistics .ball-logo {
+        background-size: 340px !important;
+        width: 230px !important;
+        height: 230px !important;
+    }
+
+    .statistics .ball-game .ball-inner-circle {
+        margin-left: 14px !important;
+        margin-top: 16px !important;
+    }
+
+    .statistics .countdown-timer {
+        font-size: 12em;
+    }    
 }
